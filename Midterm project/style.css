@@ -276,6 +276,9 @@ font-style: italic;
     .navbar-container {
         display: inline-block;
     }
+    .content {
+        grid-template-columns: 1.5fr 2.2fr;
+    }
     .container {
         width: 100%;
     }
