@@ -163,6 +163,7 @@ html, body {
     height: auto;
 }
 .picture-3 img, .picture-4 img {
+    display: inline-block;
     margin: 30px 12px 0 12px;
     width: 30%;
     height: auto;
@@ -176,7 +177,7 @@ html, body {
     display: inline-block;
     margin-bottom: 150px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 400px) {
     .container {
         width: 90%;
     }
@@ -198,7 +199,6 @@ html, body {
         margin: 10px auto;
     }
     .picture-6 {
-        display: inline-block;
         margin-bottom: 100px;
     }
 }
