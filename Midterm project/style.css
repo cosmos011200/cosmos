@@ -190,9 +190,18 @@ html, body {
     }
     .left {
         margin-right: 20%;
+        font-size: 12px;
     }
     .right {
         margin-right: 0px;
+        font-size: 14px;
+    }
+    .content-about {
+        margin-bottom: 40px;
+    }
+    .content-skill {
+        margin-top: 85px;
+        margin-bottom: 125px;
     }
     .photo {
         text-align: center;
@@ -201,7 +210,7 @@ html, body {
         display: block; 
     }
     .picture-1 img, .picture-2 img, .picture-5 img, .picture-6 img {
-        width: 100%; 
+        width: 90%; 
         max-width: 700px;
         height: auto; 
         margin: 10px auto;
