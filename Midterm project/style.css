@@ -279,9 +279,6 @@ font-style: italic;
     .container {
         width: 100%;
     }
-    .navbar {
-        height: 80px;
-    }
     .navbar a{
         font-size: 16px;
     }
