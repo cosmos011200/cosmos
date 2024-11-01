@@ -190,7 +190,7 @@ html, body {
     .photo {
         text-align: center;
     }
-    .picture-1, .picture-2, .picture-3, .picture-4, .picture-5, .picture-6 {
+    .picture-1, .picture-2, .picture-5, .picture-6 {
         display: block; 
     }
     .picture-1 img, .picture-2 img, .picture-5 img, .picture-6 img {
@@ -199,8 +199,14 @@ html, body {
         height: auto; 
         margin: 10px auto;
     }
+    .picture-3, .picture-4 {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+    }
     .picture-3 img, .picture-4 img {
-        width: 80%; 
+        display: block; 
+        width: calc(90% - 30px); ; 
         height: auto; 
         margin: 10px 0;
     }
