@@ -26,7 +26,7 @@ html, body {
     color: #eee415; 
     text-decoration: none; 
     margin: 0 20px; 
-    padding : 0 30px;
+    padding : 0 40px;
     font-size: 16px;
     display: inline-block;
     font-family: "PT Serif", serif;
@@ -164,7 +164,7 @@ html, body {
 }
 .picture-3 img, .picture-4 img {
     display: inline-block;
-    margin: 30px 12px 0 12px;
+    margin: 30px 1%;
     width: 30%;
     height: auto;
 }
@@ -177,9 +177,15 @@ html, body {
     display: inline-block;
     margin-bottom: 150px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 900px) {
     .container {
         width: 90%;
+    }
+    .navbar {
+        height: 150px;
+    }
+    .navbar a{
+        font-size: 32px;
     }
     .photo {
         text-align: center;
@@ -196,7 +202,7 @@ html, body {
     .picture-3 img, .picture-4 img {
         width: 80%; 
         height: auto; 
-        margin: 10px auto;
+        margin: 10px 0;
     }
     .picture-6 {
         margin-bottom: 100px;
