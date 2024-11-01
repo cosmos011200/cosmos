@@ -19,7 +19,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 80px;
     width: 100%;
     text-decoration: none; 
 }
@@ -67,9 +67,17 @@ html, body {
 .content {
     display: grid;
     grid-template-columns: 1.3fr 2.2fr;
+    grid-template-rows: auto;
     margin-top: 70px;
 }
+.left .about, .right .content-about { grid-row: 1; }
+.left .education, .right .university { grid-row: 2; }
+.left .skills, .right .content-skill { grid-row: 3; }
+.left .work, .right .content-work { grid-row: 4; }
+
 .left {
+    display: grid;
+    grid-template-rows:repeat(4, auto);
     position: relative;
     text-align: right;
     margin-right: 50px;
@@ -87,8 +95,7 @@ html, body {
     margin-top: 20px;
 }
 .content-skill {
-    margin-top: 68px;
-    margin-bottom: 35px;
+    margin-top: 50px;   
 }
 .education {
     margin-bottom: 230px;
@@ -114,6 +121,8 @@ html, body {
     border-radius: 50%; 
 }
 .right {
+    display: grid;
+    grid-template-rows:repeat(4, auto);
     color: white;
     font-family: "PT Serif", serif;
     font-weight: 700;
@@ -182,8 +191,20 @@ html, body {
     .container {
         width: 100%;
     }
+    .content {
+        display: grid;
+        grid-template-columns: 1.3fr 2.2fr;
+        grid-template-rows: auto;
+        margin-top: 70px;
+    }
+    .img {
+        text-align: center;
+    }
+    .img img {
+        width: 85%;
+    }
     .navbar {
-        height: 150px;
+        height: 100px;
     }
     .navbar a{
         font-size: 16px;
@@ -208,6 +229,78 @@ html, body {
     }
     .picture-1, .picture-2, .picture-5, .picture-6 {
         display: block; 
+        text-align: center;
+    }
+    .picture-1 img, .picture-2 img, .picture-5 img, .picture-6 img {
+        width: 90%; 
+        max-width: 700px;
+        height: auto; 
+        margin: 10px auto;
+    }
+    .picture-3, .picture-4 {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+    }
+    .picture-3 img, .picture-4 img {
+        display: block; 
+        width: calc(70% - 30px); ; 
+        height: 30%; 
+        margin: 10px 0;
+    }
+    .picture-6 {
+        margin-bottom: 100px;
+    }
+}
+.pt-serif-regular {
+font-family: "PT Serif", serif;
+font-weight: 400;
+font-style: normal;
+}
+.pt-serif-bold {
+font-family: "PT Serif", serif;
+font-weight: 700;
+font-style: normal;
+}
+.pt-serif-regular-italic {
+font-family: "PT Serif", serif;
+font-weight: 400;
+font-style: italic;
+}
+.pt-serif-bold-italic {
+font-family: "PT Serif", serif;
+font-weight: 700;
+font-style: italic;
+}
+@media only screen and (max-width: 500px) {
+    .navbar-container {
+        display: inline-block;
+    }
+    .container {
+        width: 100%;
+    }
+    .navbar {
+        height: 80px;
+    }
+    .navbar a{
+        font-size: 16px;
+    }
+    .left {
+        margin-right: 20%;
+        font-size: 10px;
+    }
+    .right {
+        margin-right: 0px;
+        font-size: 10px;
+    }
+    .content-work {
+       margin-bottom: -20px ;
+    }
+    .photo {
+        text-align: center;
+    }
+    .picture-1, .picture-2, .picture-5, .picture-6 {
+        display: block; 
     }
     .picture-1 img, .picture-2 img, .picture-5 img, .picture-6 img {
         width: 90%; 
@@ -223,31 +316,11 @@ html, body {
     .picture-3 img, .picture-4 img {
         display: block; 
         width: calc(90% - 30px); ; 
-        height: auto; 
+        height: 40%; 
         margin: 10px 0;
     }
     .picture-6 {
         margin-bottom: 100px;
     }
 }
-.pt-serif-regular {
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .pt-serif-bold {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  .pt-serif-regular-italic {
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  .pt-serif-bold-italic {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
   
